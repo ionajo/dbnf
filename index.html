@@ -118,7 +118,7 @@
   <section class="content-section bg-dark" id="portfolio">
     <div class="container">
       <div class="content-section-heading text-center">
-        <h2 class="mb-5 text-white">Portfolio</h2>
+        <h2 class="mb-5 text-white">Maps & views from the trail</h2>
       </div>
       <div class="row no-gutters">
         <div class="col-lg-6">
@@ -133,7 +133,7 @@
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="portfolio-item" href="overlook" target="_blank">
+          <a class="portfolio-item" href="#" data-toggle="modal" data-target="#overlook">
             <span class="caption">
               <span class="caption-content ">
                 <h2>Trail Overlook</h2>
@@ -144,7 +144,7 @@
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="portfolio-item" href="Devils Jump" target="_blank">
+          <a class="portfolio-item" href="#" data-toggle="modal" data-target="#devilsjump">
             <span class="caption">
               <span class="caption-content">
                 <h2>Devils Jump</h2>
@@ -165,17 +165,96 @@
             <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
           </a>
         </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="https://www.outragegis.com/trails/2010/07/11/furnace-arch-sheltowee-trace/" target="_blank">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Clear Creek Iron Furnace</h2>
+                <p class="mb-0">Visit historic industrial sites on Kentucky's Appalachian frontier.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/portfolio-5.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#" data-toggle="modal" data-target="#mountain-laurel">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Mountain Laurel</h2>
+                
+              </span>
+            </span>
+            <img class="img-fluid" src="img/portfolio-6.jpg" alt="">
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Callout -->
-  <section class="callout">
+  <section class="callout border-top border-secondary">
     <div class="container text-center">
-      <h2 class="mx-auto mb-5">Daniel Boone NF</h2>
+      <h2 class="mx-auto mb-5 text-light ">Daniel Boone NF</h2>
       <a class="btn btn-primary btn-xl" href="https://www.outragegis.com/weather/dbnf/">Current Weather</a>
     </div>
   </section>
+
+  <!-- Modal Devils Jump -->
+  <div id="devilsjump" class="modal fade " role="dialog">
+    <div class="modal-dialog modal-xl ">
+      <!-- Modal content-->
+      <div class="modal-content bg-dark">
+        <div class="modal-header bg-dark border-0">
+          <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body text-light">
+          <img src="devilsjump/img/devilsjump.jpg" width="100%" class="rounded">
+          <h3 class="mt-2">Devils Jump on the Big South Fork</h3>
+        </div>
+        <div class="modal-footer border-secondary border-0">
+          <button type="button" class="btn btn-default text-light bg-secondary " data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Overlook -->
+  <div id="overlook" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <!-- Modal content-->
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header bg-dark border-0">
+          <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <img src="overlook/img/overlook.jpg" width="100%" class="rounded">
+          <h3 class="mt-2">Trail overlook</h3>
+        </div>
+        <div class="modal-footer bg-dark border-0">
+          <button type="button" class="btn btn-default text-light" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Overlook -->
+  <div id="mountain-laurel" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-xl">
+      <!-- Modal content-->
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header bg-dark border-0">
+          <button type="button" class="close text-light" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <img src="img/mountain-laurel.jpg" width="100%" class="rounded">
+          <h3 class="mt-2">Mountain Laurel</h3>
+        </div>
+        <div class="modal-footer bg-dark border-0">
+          <button type="button" class="btn btn-default text-light" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Call to Action -->
   <!-- <section class="content-section bg-primary text-white">
@@ -196,13 +275,17 @@
   </section> -->
 
    <!-- About -->
-   <section class="content-section bg-light" id="about">
+   <section class="content-section bg-primary" id="about">
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-10 mx-auto">
           <img src="img/tastyfreeze-avatar.jpg" class="rounded-circle img-fluid" width="200px">
-          <h2 class="mt-5">Site by TastyFreeze</h2>
-          <p class="lead">An exploration of trails in the Daniel Boone National Forest</p>
+          <h2 class="mt-4">Site by TastyFreeze</h2>
+          <p class="lead">The Sheltowee Trace is the longest trail in the Daniel Boone National Forest and connects many state parks and a national park trail systems. 
+            My map design choices try mimic the colors, symbols, and forms found in the area mapped. 
+            The theme of the map will often have a distinct style to distinguish those features from reference features; 
+            developing the figure-ground relationship is essential for good interpretation.
+          </p>
           <p>April, 2020</p>
         </div>
       </div>
@@ -210,7 +293,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer text-center">
+  <footer class="footer text-center bg-dark">
     <div class="container">
       <ul class="list-inline mb-5">
         <li class="list-inline-item">
